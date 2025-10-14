@@ -1,0 +1,189 @@
+.Services {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 1rem;
+  margin-right: 12rem;
+  position: relative;
+}
+
+.Awesome {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.Awesome > :nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--black);
+  font-family: Gumela;
+}
+
+.Awesome > :nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--orange);
+  font-family: Gumela;
+}
+
+.Awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 0.2rem;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.cards {
+
+ position: relative;
+
+}
+
+
+
+.cards > * {
+
+ position: absolute;
+
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #7d16bd;
+  filter: blur(72px);
+  z-index: -9;
+  top: 55%;
+  left: 56%;
+}
+h2{
+  display: inline;
+  color: rgb(55, 27, 27);
+}
+
+/* --------------------------------------------- */
+/* 📱 RESPONSIVE FIX: stack cards vertically      */
+/* --------------------------------------------- */
+@media (max-width: 1024px) {
+  .Services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:200vh;
+    margin-right: 0;
+    padding: 2rem 1rem;
+
+    position:relative;
+  }
+
+  .Awesome {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .cards {
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 5rem;
+    margin-top: 2rem;
+      transform: none !important;
+
+  }
+
+
+  .cards > * {
+     position: relative !important;
+    display:flex;
+     flex-direction: column;
+     position: relative;
+     align-items: center;
+        transform: none !important;
+
+     
+  
+  }
+  .s-button {
+  width:12rem !important;
+  height: 4rem;
+  margin-top: 1rem;
+}
+
+   .cards > :nth-child(1){
+    display:flex;
+     flex-direction: column;
+     position: relative;
+     align-items: center;
+     top:-40rem !important;
+     
+  
+  }
+    .cards > :nth-child(2){
+    display:flex;
+     flex-direction: column;
+     position: relative;
+     align-items: center;
+     top:-25rem !important;
+      
+  }
+      .cards > :nth-child(3){
+    display:flex;
+     flex-direction: column;
+     position: relative;
+     align-items: center;
+     top:-10rem !important;
+     margin-bottom: 10px !important;
+      
+  }
+
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .blur {
+    display: none;
+  }
+}
+
+/* 📱 Smaller mobile screens */
+@media (max-width: 600px) {
+  .Awesome > :nth-child(1),
+  .Awesome > :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .Awesome > :nth-child(3) {
+    font-size: 0.9rem;
+  }
+
+  .s-button {
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    gap: 1.5rem;
+  }
+}

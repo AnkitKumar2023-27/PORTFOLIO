@@ -1,0 +1,265 @@
+
+
+.details{
+  position:absolute;
+  display: flex; 
+  padding-top:3rem;
+  
+ 
+  position: relative; 
+  z-index: 1;
+  
+}
+
+.qualification {
+
+  padding-top:  50px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.qualification-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--or);
+}
+
+.qualification-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Gumela;
+  color:var(--orange);
+  transform: scale(1.2);
+}
+
+.qualification-title p {
+  color: var(--black);
+  font-family: Gumela;
+  font-size: 14px;
+  transform: scale(1.4);
+}
+
+.qualification-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333;
+}
+
+.qualification-timeline {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.qualification-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  position: relative;
+  transform: scale(1.2);
+}
+
+.timeline-item.left .content {
+  width: 45%;
+  text-align: right;
+}
+
+.timeline-item.right .content {
+  width: 45%;
+  position: relative;
+  text-align: left;
+  left:3rem;
+}
+
+.timeline-item .circle {
+  width: 0px;
+  height: 0px;
+  background: #333;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+
+.timeline-item .content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #222;
+  /* position:relative; */
+}
+
+.timeline-item .content p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.timeline-item .content span {
+  font-size: 12px;
+  color: var(--orange);  
+  position:relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  right: 10%; 
+
+ 
+ 
+}
+.ankit{
+  position: relative;
+  left:1rem;
+}
+.blur { position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #e3c2f8;
+  filter: blur(212px);
+  z-index: -9;
+  top:55%;
+  left:56%;
+  filter: blur(72px);
+  z-index: 1;
+}
+.right{
+  display: flex;
+  right: 5rem;
+  width: 50vh;
+  text-align: center;
+  align-items: center;
+  align-content:flex-end;
+  position: relative;
+  transform: scale(1.1);
+  /* left:2rem; */
+}
+.r-mainCircle{
+  left:30rem;
+  position: relative;
+  width: 18rem;
+  height:18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top :2rem;
+  background-color:rgb(230, 224, 224);
+}
+.r-mainCircle>*{
+    position: absolute;
+}
+.r-mainCircle> :nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+.r-mainCircle> :nth-child(2){
+    top: 5.5rem;
+    left: -3rem;
+}
+.r-mainCircle> :nth-child(3){
+    top: 6rem;
+    left: 5rem;
+}
+.r-mainCircle> :nth-child(4){
+    top: 15rem;
+    left: 5rem;
+}
+.r-mainCircle> :nth-child(5){
+    top: 6rem;
+    left: 13rem;
+}
+.r-secCircle{
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid  #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  box-shadow: var(--smboxShadow);
+  background: white;
+  
+}
+.r-secCircle> img{
+  transform: scale(0.7);
+}
+.r-backGroundCircl{
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.blueCircle{
+  background-color: blue;
+  left: 40rem;
+  top: 10rem;
+}
+.yellowCircle{
+  background-color: yellow;
+  left: 38rem;
+  top: 20rem;
+}
+.left{
+  display: flex;
+  align-items: center !important;
+  position: relative !important;
+  left: 5px !important;
+  /* left: rem; */
+}
+
+
+/* 2️⃣ Hide right section (circle) on smaller screens */
+@media (max-width: 768px) {
+  .right {
+    display: flex;
+    left: 0px !important;
+    margin: 0px!important;
+    padding:0px;
+  }
+  .blur{
+    display:none !important;
+  }
+
+  .details {
+     position: relative;
+  left: 80px;  /* adjust this value as per your layout — try 50px–100px */
+
+    left: 0 !important; /* reset shift on mobile */
+  }
+}
+.blur {
+  background: #9f7fdeff;
+  z-index: 2;
+  left: 2rem;
+  top: 60rem;
+  position: absolute; /* add this if needed */
+}
+
+/* Hide on mobile (below 768px) */
+@media (max-width: 768px) {
+  .blur {
+    display: none !important;
+  }
+}

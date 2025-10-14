@@ -1,0 +1,47 @@
+.card {
+    /* Dimensions and Positioning */
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    padding: 0px 26px 2rem 26px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    align-items: center;
+    text-align: center;
+    
+ 
+    border: 7px solid var(--orangeCard);
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.card > span:nth-of-type(2) {
+    font-family:'Gumela';
+     font: 200;
+    transform: scale(0.79);
+    margin-bottom: -1rem;
+    margin-top: -1.5rem;
+    
+
+}
+.card > span:nth-of-type(1) {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    transform: scale(1);
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+
+}
+.c-button{
+    background:#ffffff;
+    box-shadow: 10px 19px 60px rgba(0,0,0,0.5);
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    color: #5290fd;
+    margin-top: 10px;
+    transform: scale(1.2);
+}

@@ -1,0 +1,96 @@
+.portFolio {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  padding: 2rem 1rem;
+}
+
+.portFolio span:nth-of-type(1) {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.portFolio span:nth-of-type(2) {
+  color: var(--orange);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.portFolio .swiper {
+  overflow: visible !important;
+}
+
+.portfolio-slider {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portFolio img {
+  width: 19rem;
+  max-width: 90%;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portFolio img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------------------ */
+/* 📱 Responsive Design - Tablets & Mobiles   */
+/* ------------------------------------------ */
+@media (max-width: 1024px) {
+  .portFolio {
+    height: auto;
+    padding: 3rem 1rem;
+      height: 82vh !important;
+  }
+
+  .portFolio span:nth-of-type(1) {
+    font-size: 2.5rem;
+  }
+
+  .portFolio span:nth-of-type(2) {
+    font-size: 3rem;
+  }
+
+  .portfolio-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portFolio img {
+    width: 17rem;
+    margin-bottom: 2rem;
+    transform: scale(1.2) !important;
+  }
+}
+
+/* 📱 Small Mobile Screens */
+@media (max-width: 600px) {
+  .portFolio {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .portFolio span:nth-of-type(1) {
+    font-size: 2rem;
+  }
+
+  .portFolio span:nth-of-type(2) {
+    font-size: 2.5rem;
+  }
+
+  .portFolio img {
+    width: 15rem;
+  }
+}

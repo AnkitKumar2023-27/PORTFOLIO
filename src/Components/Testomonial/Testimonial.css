@@ -1,0 +1,141 @@
+.t-wrapper {
+    padding: 0 3rem 0 3rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;
+    flex-direction: column;
+    gap: 0rem;
+    margin-bottom: -1rem;
+    position: relative;
+}
+
+.t-heading {
+    margin-bottom: 3rem;
+    transform: scale(1.2);
+}
+
+.t-heading > * {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.t-heading span:nth-of-type(2) {
+    color: var(--orange);
+}
+
+.t-blur {
+    top: 3rem;
+    left: 0;
+    position: absolute;
+    color: lightyellow;
+}
+
+.t-blur2 {
+    top: 9rem;
+    right: 15%;
+    position: absolute;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 30rem;
+    height: 12rem;
+    background: rgba(255, 255, 255, 0.26);
+    box-shadow: var(--boxShadow);
+    border: 7px solid var(--blueCard);
+    border-radius: 20px;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.testimonial > img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial > span {
+    color: var(--gray);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0 1rem;
+}
+
+.testimonial-slider {
+    width: 100%;
+    max-width: 700px;
+    overflow: visible !important;
+}
+
+.testimonial-slider .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-wrapper .swiper-pagination-bullet-active {
+    background-color: var(--orange);
+}
+
+@media (max-width: 1024px) {
+    .testimonial {
+        width: 80%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .testimonial > span {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+
+    .t-heading > * {
+        font-size: 1.8rem;
+    }
+
+    .t-blur {
+        top: 2rem;
+        left: 5%;
+    }
+
+    .t-blur2 {
+        top: 6rem;
+        right: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial {
+        width: 90%;
+        padding: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .testimonial > span {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+
+    .t-heading > * {
+        font-size: 1.5rem;
+    }
+
+    .t-blur {
+        top: 1rem;
+        left: 5%;
+    }
+
+    .t-blur2 {
+        top: 4rem;
+        right: 5%;
+    }
+}
